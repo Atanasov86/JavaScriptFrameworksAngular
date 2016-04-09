@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>my first angular app</title>
+  <link rel="stylesheet" type="text/css" href="lib/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="lib/dist/css/bootstrap-theme.min.css">
+</head>
+<body ng-app="app" ng-controller="StudentController">
+
+<div class="container">
+  <div class="jumbotron">
+    <div class="row">
+      <div class="col-md-6">
+        <p>
+          <strong>Name: </strong> {{student.name}}
+        </p>
+        <p>
+          <strong>Grade: </strong> {{student.grade}}
+        </p>
+        <p>
+          <strong>School: </strong> {{student.school}}
+        </p>
+        <p>
+          <strong>Teacher: </strong> {{student.teacher}}
+        </p>
+      </div>
+      <div class="col-md-6">
+        <img ng-src="{{student.photo}}" src="" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="bower_components/angular/angular.js"></script>
+<script src="app.js"></script>
+<script src="controllers/studentController.js"></script>
+</body>
+</html>

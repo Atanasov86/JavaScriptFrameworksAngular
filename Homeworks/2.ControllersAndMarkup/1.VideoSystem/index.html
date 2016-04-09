@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html lang="en" ng-app="videoSystem" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>My AngularJS App</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/app/bower_components/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="/app/bower_components/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="/app/app.css">
+  <script src="app/bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+  <ul class="menu">
+    <li><a href="#/home">Home</a></li>
+    <li><a href="#/addNewVideo">Add new video</a></li>
+  </ul>
+  
+  <div ng-view></div>  
+  
+  <script src="app/bower_components/angular/angular.js"></script>
+  <script src="app/bower_components/angular-route/angular-route.js"></script>
+  <script src="app/app.js"></script>
+  <script src="app/home/home.js"></script>
+  <script src="app/addNewVideo/addNewVideo.js"></script>  
+</body>
+</html>

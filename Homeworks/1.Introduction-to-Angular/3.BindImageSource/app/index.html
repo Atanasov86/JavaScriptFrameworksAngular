@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en" ng-app="bindImage">
+<head>
+    <meta charset="UTF-8">
+    <title>3.BindImageSource</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <div id="wrapper" ng-controller="imageController">
+        <label>Paste image URL:</label>
+        <input type="text" ng-model="imageUrl"/>
+        <div><image id="image" ng-src="{{imageUrl}}"></image></div>
+
+    </div>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="app.js"></script>
+    <script src="controllers/imageController.js"></script>
+</body>
+</html>
